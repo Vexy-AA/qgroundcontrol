@@ -104,6 +104,9 @@ else()
 		)
 endif()
 
+add_definitions(
+	-DQGC_GST_STREAMING
+)
 if (GST_FOUND)
     add_definitions(
         -DQGC_GST_STREAMING

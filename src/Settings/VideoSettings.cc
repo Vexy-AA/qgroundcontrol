@@ -37,6 +37,7 @@ DECLARE_SETTINGGROUP(Video, "Video")
     // Setup enum values for videoSource settings into meta data
     QVariantList videoSourceList;
 #ifdef QGC_GST_STREAMING
+    qDebug() << "ADD videoSourceRTSP" ;
     videoSourceList.append(videoSourceRTSP);
 #ifndef NO_UDP_VIDEO
     videoSourceList.append(videoSourceUDPH264);
@@ -53,10 +54,12 @@ DECLARE_SETTINGGROUP(Video, "Video")
     for (const QCameraInfo &cameraInfo: cameras) {
         videoSourceList.append(cameraInfo.description());
     }
+    qDebug() << "QGC_DISABLE_UVC" ;
 #endif
     if (videoSourceList.count() == 0) {
         _noVideo = true;
         videoSourceList.append(videoSourceNoVideo);
+        qDebug() << "ADD NO VIDEO SOURCE" ;
     } else {
         videoSourceList.insert(0, videoDisabled);
     }

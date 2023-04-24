@@ -18,6 +18,7 @@
 #include "TaisyncVideoReceiver.h"
 #endif
 
+#include <QElapsedTimer>
 #include <QTimer>
 #include <QTime>
 
@@ -165,5 +166,5 @@ private:
     QString         _localIPAddr;
     QString         _remoteIPAddr;
     QString         _netMask;
-    QTime           _timeoutTimer;
+    QElapsedTimer   _timeoutTimer;
 };

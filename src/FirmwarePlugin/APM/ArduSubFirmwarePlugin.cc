@@ -155,7 +155,7 @@ void ArduSubFirmwarePlugin::initializeStreamRates(Vehicle* vehicle) {
     vehicle->requestDataStream(MAV_DATA_STREAM_EXTENDED_STATUS, 2);
     vehicle->requestDataStream(MAV_DATA_STREAM_RC_CHANNELS,     2);
     vehicle->requestDataStream(MAV_DATA_STREAM_POSITION,        3);
-    vehicle->requestDataStream(MAV_DATA_STREAM_EXTRA1,          20);
+    vehicle->requestDataStream(MAV_DATA_STREAM_EXTRA1,          10);
     vehicle->requestDataStream(MAV_DATA_STREAM_EXTRA2,          10);
     vehicle->requestDataStream(MAV_DATA_STREAM_EXTRA3,          3);
 }
@@ -163,7 +163,7 @@ void ArduSubFirmwarePlugin::initializeStreamRates(Vehicle* vehicle) {
 bool ArduSubFirmwarePlugin::isCapable(const Vehicle* vehicle, FirmwareCapabilities capabilities)
 {
     Q_UNUSED(vehicle);
-    uint32_t available = SetFlightModeCapability | PauseVehicleCapability;
+    uint32_t available = SetFlightModeCapability | PauseVehicleCapability | GuidedModeCapability;
     return (capabilities & available) == capabilities;
 }
 

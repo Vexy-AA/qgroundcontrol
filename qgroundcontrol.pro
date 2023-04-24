@@ -383,6 +383,7 @@ INCLUDEPATH += \
     include/ui \
     src \
     src/ADSB \
+    build/libs/airmap-platform-sdk/include \
     src/api \
     src/AnalyzeView \
     src/Camera \
