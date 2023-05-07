@@ -132,6 +132,11 @@ SetupPage {
                     resource: "qrc:///qmlimages/Frames/SimpleROV-5.png"
                     paramValue: 6
                 }
+                ListElement {
+                    name: "Custrom"
+                    resource: "qrc:///qmlimages/Frames/Vectored.png"
+                    paramValue: 7
+                }
             }
 
             Flow {

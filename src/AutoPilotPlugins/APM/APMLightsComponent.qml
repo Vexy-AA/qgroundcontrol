@@ -150,8 +150,8 @@ SetupPage {
                     var baseValue = 8
                     // Extra outputs
                     // http://ardupilot.org/copter/docs/parameters.html#brd-pwm-count-auxiliary-pin-config
-                    var brd_pwm_count_value = controller.getParameterFact(-1, "BRD_PWM_COUNT").value
-                    update(8 + (brd_pwm_count_value == 7 ? 3 : brd_pwm_count_value))
+                    /**var brd_pwm_count_value = controller.getParameterFact(-1, "BRD_PWM_COUNT").value
+                    update(8 + (brd_pwm_count_value == 7 ? 3 : brd_pwm_count_value))*/
                 }
             }
 

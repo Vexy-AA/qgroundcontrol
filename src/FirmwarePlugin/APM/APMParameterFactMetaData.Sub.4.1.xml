@@ -2096,7 +2096,7 @@
 </param>
 </parameters>
 <parameters name="BRD_">
-<param humanName="Auxiliary pin config" name="BRD_PWM_COUNT" documentation="Controls number of FMU outputs which are setup for PWM. All unassigned pins can be used for GPIO" user="Advanced">
+<!--<param humanName="Auxiliary pin config" name="BRD_PWM_COUNT" documentation="Controls number of FMU outputs which are setup for PWM. All unassigned pins can be used for GPIO" user="Advanced">
 <values>
 <value code="0">No PWMs</value>
 <value code="1">One PWMs</value>
@@ -2109,7 +2109,7 @@
 <value code="8">Eight PWMs</value>
 </values>
 <field name="RebootRequired">True</field>
-</param>
+</param>-->
 <param humanName="Serial 1 flow control" name="BRD_SER1_RTSCTS" documentation="Enable flow control on serial 1 (telemetry 1) on Pixhawk. You must have the RTS and CTS pins connected to your radio. The standard DF13 6 pin connector for a 3DR radio does have those pins connected. If this is set to 2 then flow control will be auto-detected by checking for the output buffer filling on startup. Note that the PX4v1 does not have hardware flow control pins on this port, so you should leave this disabled." user="Advanced">
 <values>
 <value code="0">Disabled</value>
