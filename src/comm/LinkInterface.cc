@@ -82,6 +82,14 @@ void LinkInterface::_freeMavlinkChannel()
 
 void LinkInterface::writeBytesThreadSafe(const char *bytes, int length)
 {
+#ifdef MAVLINK_ENCRYPTION    
+    char* data = (char*) bytes;
+    uint8_t j = 0;
+    for (int position = 0; position < length; position++){
+        data[position] ^= enc[j];
+        if (++j > sizeof(enc)) j = 0;
+    }
+#endif    
     emit _invokeWriteBytes(QByteArray(bytes, length));
 }
 
