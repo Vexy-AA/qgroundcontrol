@@ -25,6 +25,8 @@
 ///     @author Rustom Jehangir <rusty@bluerobotics.com>
 
 #include "ArduSubFirmwarePlugin.h"
+#include "QGCApplication.h"
+#include "SettingsManager.h"
 
 bool ArduSubFirmwarePlugin::_remapParamNameIntialized = false;
 FirmwarePlugin::remapParamNameMajorVersionMap_t ArduSubFirmwarePlugin::_remapParamName;
