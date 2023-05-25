@@ -70,7 +70,7 @@
     "name":             "altitudeRelative",
     "shortDesc": "Alt (Rel)",
     "type":             "double",
-    "decimalPlaces":    1,
+    "decimalPlaces":    2,
     "units":            "m"
 },
 {
