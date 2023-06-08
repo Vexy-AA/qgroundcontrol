@@ -137,6 +137,16 @@ SetupPage {
                     resource: "qrc:///qmlimages/Frames/Vectored.png"
                     paramValue: 7
                 }
+                ListElement {
+                    name: "yawMain"
+                    resource: "qrc:///qmlimages/Frames/Vectored.png"
+                    paramValue: 8
+                }
+                ListElement {
+                    name: "yawAll"
+                    resource: "qrc:///qmlimages/Frames/Vectored.png"
+                    paramValue: 9
+                }
             }
 
             Flow {
