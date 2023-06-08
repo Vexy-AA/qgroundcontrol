@@ -402,6 +402,7 @@
 <value code="13">NMEA water speed</value>
 <value code="14">MSP</value>
 <value code="15">ASP5033</value>
+<value code="16">AVXL100</value>
 </values>
 </param>
 <param humanName="Airspeed use" name="ARSPD_USE" documentation="Enables airspeed use for automatic throttle modes and replaces control from THR_TRIM. Continues to display and log airspeed if set to 0. Uses airspeed for control if set to 1. Only uses airspeed when throttle = 0 if set to 2 (useful for gliders with airspeed sensors behind propellers)." user="Standard">
