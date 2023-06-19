@@ -3,7 +3,17 @@
         <paramfile>
         <vehicles>
         <parameters name="ArduSub">
-<param humanName="Depth reading at surface" name="ArduSub:SURFACE_DEPTH" documentation="The depth the external pressure sensor will read when the vehicle is considered at the surface (in centimeters)" user="Standard">
+<param humanName="Depth reading at surface" name="ArduSub:DEPTH_SURFACE" documentation="The depth the external pressure sensor will read when the vehicle is considered at the surface (in centimeters)" user="Standard">
+<field name="Units">cm</field>
+<field name="UnitText">centimeters</field>
+<field name="Range">-100 0</field>
+</param>
+<param humanName="Depth reading at bottom" name="ArduSub:DEPTH_BOTTOM" documentation="The depth the external pressure sensor will read when the vehicle is considered at the bottom (in centimeters)" user="Standard">
+<field name="Units">cm</field>
+<field name="UnitText">centimeters</field>
+<field name="Range">-100 0</field>
+</param>
+<param humanName="Depth reading at maximum depth" name="ArduSub:DEPTH_MAX" documentation="The depth the external pressure sensor will read when the vehicle is considered at maximum rated depth (in centimeters)" user="Standard">
 <field name="Units">cm</field>
 <field name="UnitText">centimeters</field>
 <field name="Range">-100 0</field>
