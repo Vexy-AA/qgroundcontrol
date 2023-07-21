@@ -28,7 +28,8 @@ Rectangle {
     property real _sliderMaxAlt:        _flyViewSettings ? _flyViewSettings.guidedMaximumAltitude.rawValue : 0
     property real _sliderMinAlt:        _flyViewSettings ? _flyViewSettings.guidedMinimumAltitude.rawValue : 0
     property bool _flying:              _activeVehicle ? _activeVehicle.flying : false
-
+    property real _sliderPositive:      _vehicleAltitude / _flyViewSettings.guidedMinimumAltitude.rawValue
+    property real _sliderNegative:      _sliderPositive - 1
     function reset() {
         altSlider.value = 0
     }
@@ -39,7 +40,7 @@ Rectangle {
 
     /// Returns the user specified change in altitude from the current vehicle altitude
     function getAltitudeChangeValue() {
-        return altField.newAltitudeMeters - _vehicleAltitude
+        return altField.newAltitudeMeters //- _vehicleAltitude
     }
 
     function log10(value) {
@@ -72,10 +73,14 @@ Rectangle {
 
             property real   altGainRange:           Math.max(_sliderMaxAlt - _vehicleAltitude, 0)
             property real   altLossRange:           Math.max(_vehicleAltitude - _sliderMinAlt, 0)
-            property real   altExp:                 Math.pow(altSlider.value, 3)
-            property real   altLossGain:            altExp * (altSlider.value > 0 ? altGainRange : altLossRange)
+            property real   altPositiveCoef:        altSlider.value / _sliderPositive
+            property real   altNegativeCoef:        altSlider.value / _sliderNegative
+            property real   altCoef:                altSlider.value > 0 ? altPositiveCoef : altNegativeCoef
+            property real   altExp:                 Math.pow(altCoef, 1)
+            property real   altSin:                 0.5 + Math.sin(altCoef * Math.PI - Math.PI/2)/2
+            property real   altLossGain:            altSin * (altSlider.value > 0 ? altGainRange : -altLossRange)
             property real   newAltitudeMeters:      _vehicleAltitude + altLossGain
-            property string newAltitudeAppUnits:    QGroundControl.unitsConversion.metersToAppSettingsHorizontalDistanceUnits(newAltitudeMeters).toFixed(1)
+            property string newAltitudeAppUnits:    QGroundControl.unitsConversion.metersToAppSettingsHorizontalDistanceUnits(newAltitudeMeters).toFixed(2)
 
             function setToMinimumTakeoff() {
                 altSlider.value = Math.pow(_activeVehicle.minimumTakeoffAltitude() / altGainRange, 1.0/3.0)
@@ -91,8 +96,8 @@ Rectangle {
         anchors.left:       parent.left
         anchors.right:      parent.right
         orientation:        Qt.Vertical
-        minimumValue:       _flying ? -1 : 0
-        maximumValue:       1
+        minimumValue:       _sliderNegative//_flying ? -1 : -1
+        maximumValue:       _sliderPositive
         zeroCentered:       true
         rotation:           180
 
