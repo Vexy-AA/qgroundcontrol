@@ -1134,7 +1134,7 @@ void Vehicle::_handleGlobalPositionInt(mavlink_message_t& message)
     mavlink_msg_global_position_int_decode(&message, &globalPositionInt);
 
     if (!_altitudeMessageAvailable) {
-        _altitudeRelativeFact.setRawValue((globalPositionInt.relative_alt -2000000)/ 1000.0);
+        _altitudeRelativeFact.setRawValue((globalPositionInt.relative_alt /* -2000000 */)/ 1000.0);
         _altitudeAMSLFact.setRawValue(globalPositionInt.alt / 1000.0);
     }
 
