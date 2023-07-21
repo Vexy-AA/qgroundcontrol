@@ -100,6 +100,7 @@ Item {
     readonly property int actionROI:                        22
     readonly property int actionActionList:                 23
     readonly property int actionForceArm:                   24
+    readonly property int actionGotoAlt:                    25
 
     property var    _activeVehicle:             QGroundControl.multiVehicleManager.activeVehicle
     property bool   _useChecklist:              QGroundControl.settingsManager.appSettings.useChecklist.rawValue && QGroundControl.corePlugin.options.preFlightChecklistUrl.toString().length
@@ -402,9 +403,19 @@ Item {
             altitudeSlider.visible = true
             break;
         case actionGoto:
+            mapIndicator.show(actionData)
+            _activeVehicle.guidedModeGotoLocation(actionData)
+            return
+            //confirmDialog.title = gotoTitle
+            //confirmDialog.message = gotoMessage
+            //confirmDialog.hideTrigger = Qt.binding(function() { return !showGotoLocation })
+            break;
+        case actionGotoAlt:
             confirmDialog.title = gotoTitle
             confirmDialog.message = gotoMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showGotoLocation })
+            altitudeSlider.reset()
+            altitudeSlider.visible = true
             break;
         case actionSetWaypoint:
             confirmDialog.title = setWaypointTitle
@@ -503,6 +514,10 @@ Item {
             _activeVehicle.guidedModeChangeAltitude(actionAltitudeChange, false /* pauseVehicle */)
             break
         case actionGoto:
+            _activeVehicle.guidedModeGotoLocation(actionData)
+            break
+        case actionGotoAlt:
+            actionData.altitude = actionAltitudeChange
             _activeVehicle.guidedModeGotoLocation(actionData)
             break
         case actionSetWaypoint:
