@@ -514,7 +514,7 @@ FlightMap {
     // Handle guided mode clicks
     MouseArea {
         anchors.fill: parent
-
+        acceptedButtons: Qt.LeftButton | Qt.RightButton
         QGCMenu {
             id: clickMenu
             property var coord
@@ -523,8 +523,21 @@ FlightMap {
                 visible:        globals.guidedControllerFlyView.showGotoLocation
 
                 onTriggered: {
+                    orbitMapCircle.hide()
+                    gotoLocationItem.hide()
                     gotoLocationItem.show(clickMenu.coord)
                     globals.guidedControllerFlyView.confirmAction(globals.guidedControllerFlyView.actionGoto, clickMenu.coord, gotoLocationItem)
+                }
+            }
+            QGCMenuItem {
+                text:           qsTr("Go to location at chosen depth")
+                visible:        globals.guidedControllerFlyView.showGotoLocation
+
+                onTriggered: {
+                    orbitMapCircle.hide()
+                    gotoLocationItem.hide()
+                    gotoLocationItem.show(clickMenu.coord)
+                    globals.guidedControllerFlyView.confirmAction(globals.guidedControllerFlyView.actionGotoAlt, clickMenu.coord, gotoLocationItem)
                 }
             }
             QGCMenuItem {
@@ -532,6 +545,8 @@ FlightMap {
                 visible:        globals.guidedControllerFlyView.showOrbit
 
                 onTriggered: {
+                    orbitMapCircle.hide()
+                    gotoLocationItem.hide()
                     orbitMapCircle.show(clickMenu.coord)
                     globals.guidedControllerFlyView.confirmAction(globals.guidedControllerFlyView.actionOrbit, clickMenu.coord, orbitMapCircle)
                 }
@@ -541,6 +556,8 @@ FlightMap {
                 visible:        globals.guidedControllerFlyView.showROI
 
                 onTriggered: {
+                    orbitMapCircle.hide()
+                    gotoLocationItem.hide()
                     roiLocationItem.show(clickMenu.coord)
                     globals.guidedControllerFlyView.confirmAction(globals.guidedControllerFlyView.actionROI, clickMenu.coord, roiLocationItem)
                 }
@@ -548,9 +565,9 @@ FlightMap {
         }
 
         onClicked: {
+            if(mouse.button & Qt.RightButton)
             if (!globals.guidedControllerFlyView.guidedUIVisible && (globals.guidedControllerFlyView.showGotoLocation || globals.guidedControllerFlyView.showOrbit || globals.guidedControllerFlyView.showROI)) {
-                orbitMapCircle.hide()
-                gotoLocationItem.hide()
+                
                 var clickCoord = _root.toCoordinate(Qt.point(mouse.x, mouse.y), false /* clipToViewPort */)
                 clickMenu.coord = clickCoord
                 clickMenu.popup()
