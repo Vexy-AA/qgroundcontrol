@@ -362,3 +362,25 @@ void ArduSubFirmwarePlugin::adjustMetaData(MAV_TYPE vehicleType, FactMetaData* m
         metaData->setShortDescription(QString(_factRenameMap[metaData->name()]));
     }
 }
+
+void ArduSubFirmwarePlugin::guidedModeGotoLocation(Vehicle* vehicle, const QGeoCoordinate& gotoCoord)
+{
+    QString str1 = QString("goto coord %1 %2 %3")
+                       .arg(gotoCoord.latitude())
+                       .arg(gotoCoord.longitude())
+                       .arg(gotoCoord.altitude());
+    qgcApp()->showAppMessage(str1);
+        return;
+    if (qIsNaN(vehicle->altitudeRelative()->rawValue().toDouble())) {
+        qgcApp()->showAppMessage(QStringLiteral("Unable to go to location, vehicle position not known."));
+        return;
+    }
+
+
+    setGuidedMode(vehicle, true);
+
+    QGeoCoordinate coordWithAltitude = gotoCoord;
+    coordWithAltitude.setAltitude(vehicle->altitudeRelative()->rawValue().toDouble());
+    vehicle->missionManager()->writeArduPilotGuidedMissionItem(coordWithAltitude, false /* altChangeOnly */);
+}
+

@@ -115,7 +115,7 @@ public:
     void initializeStreamRates(Vehicle* vehicle) override final;
 
     bool isCapable(const Vehicle *vehicle, FirmwareCapabilities capabilities) final;
-
+    void guidedModeGotoLocation (Vehicle* vehicle, const QGeoCoordinate& gotoCoord) override;
     bool supportsThrottleModeCenterZero(void) final;
 
     bool supportsRadio(void) final;
