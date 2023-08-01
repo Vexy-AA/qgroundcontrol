@@ -371,6 +371,8 @@ FlightMap {
             label:      qsTr("Go here", "Go to location waypoint")
         }
 
+        property var newCoordinates 
+        property var oldCoordinates
         property bool inGotoFlightMode: _activeVehicle ? _activeVehicle.flightMode === _activeVehicle.gotoFlightMode : false
 
         onInGotoFlightModeChanged: {
@@ -391,19 +393,29 @@ FlightMap {
 
         function show(coord) {
             gotoLocationItem.coordinate = coord
+            oldCoordinates = coord
             gotoLocationItem.visible = true
         }
-
+        function showPrevious (){
+            gotoLocationItem.coordinate = oldCoordinates
+            gotoLocationItem.visible = true
+        }
+        
         function hide() {
             gotoLocationItem.visible = false
         }
-
+        function setNewCoordinates(coord){
+            newCoordinates = coord
+            gotoLocationItem.coordinate = coord
+        }
         function actionConfirmed() {
+            show(newCoordinates)
             // We leave the indicator visible. The handling for onInGuidedModeChanged will hide it.
         }
 
         function actionCancelled() {
-            hide()
+            //hide()
+            show(oldCoordinates)
         }
     }
 
@@ -534,9 +546,7 @@ FlightMap {
                 visible:        globals.guidedControllerFlyView.showGotoLocation
 
                 onTriggered: {
-                    orbitMapCircle.hide()
-                    gotoLocationItem.hide()
-                    gotoLocationItem.show(clickMenu.coord)
+                    orbitMapCircle.hide()                 
                     globals.guidedControllerFlyView.confirmAction(globals.guidedControllerFlyView.actionGotoAlt, clickMenu.coord, gotoLocationItem)
                 }
             }

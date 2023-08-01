@@ -416,6 +416,7 @@ Item {
             confirmDialog.hideTrigger = Qt.binding(function() { return !showGotoLocation })
             altitudeSlider.reset()
             altitudeSlider.visible = true
+            mapIndicator.setNewCoordinates(actionData)
             break;
         case actionSetWaypoint:
             confirmDialog.title = setWaypointTitle
