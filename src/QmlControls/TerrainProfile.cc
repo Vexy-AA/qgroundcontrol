@@ -249,11 +249,12 @@ QSGNode* TerrainProfile::updatePaintNode(QSGNode* oldNode, QQuickItem::UpdatePai
     // The profile view min/max is setup to include a full terrain profile as well as the flight path segments.
     _minAMSLAlt = std::fmin(_missionController->minAMSLAltitude(), minTerrainHeight);
     _maxAMSLAlt = std::fmax(_missionController->maxAMSLAltitude(), maxTerrainHeight);
-
+    if (_maxAMSLAlt > 0 ) _maxAMSLAlt = 0;
     // We add a buffer to the min/max alts such that the visuals don't draw lines right at the edges of the display
     double amslAltRange = _maxAMSLAlt - _minAMSLAlt;
     double amslAltRangeBuffer = amslAltRange * 0.1;
     _maxAMSLAlt += amslAltRangeBuffer;
+    if (_maxAMSLAlt > 0 ) _maxAMSLAlt = 0;
     if (_minAMSLAlt > 0.0) {
         _minAMSLAlt -= amslAltRangeBuffer;
         _minAMSLAlt = std::fmax(_minAMSLAlt, 0.0);
