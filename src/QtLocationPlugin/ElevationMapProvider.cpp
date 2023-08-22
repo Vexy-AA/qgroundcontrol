@@ -24,11 +24,16 @@ int AirmapElevationProvider::lat2tileY(const double lat, const int z) const {
 QString AirmapElevationProvider::_getURL(const int x, const int y, const int zoom, QNetworkAccessManager* networkManager) {
     Q_UNUSED(networkManager)
     Q_UNUSED(zoom)
-    return QString("https://api.airmap.com/elevation/v1/ele/carpet?points=%1,%2,%3,%4")
+    return QString("http://127.0.0.1/elevation/v1/ele/carpet?points=%1,%2,%3,%4")
         .arg(static_cast<double>(y) * TerrainTile::tileSizeDegrees - 90.0)
         .arg(static_cast<double>(x) * TerrainTile::tileSizeDegrees - 180.0)
         .arg(static_cast<double>(y + 1) * TerrainTile::tileSizeDegrees - 90.0)
         .arg(static_cast<double>(x + 1) * TerrainTile::tileSizeDegrees - 180.0);
+    /* return QString("https://api.airmap.com/elevation/v1/ele/carpet?points=%1,%2,%3,%4")
+        .arg(static_cast<double>(y) * TerrainTile::tileSizeDegrees - 90.0)
+        .arg(static_cast<double>(x) * TerrainTile::tileSizeDegrees - 180.0)
+        .arg(static_cast<double>(y + 1) * TerrainTile::tileSizeDegrees - 90.0)
+        .arg(static_cast<double>(x + 1) * TerrainTile::tileSizeDegrees - 180.0); */
 }
 
 QGCTileSet AirmapElevationProvider::getTileCount(const int zoom, const double topleftLon,
