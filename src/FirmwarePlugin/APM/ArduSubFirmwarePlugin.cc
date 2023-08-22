@@ -193,7 +193,7 @@ void ArduSubFirmwarePlugin::initializeStreamRates(Vehicle* vehicle) {
 bool ArduSubFirmwarePlugin::isCapable(const Vehicle* vehicle, FirmwareCapabilities capabilities)
 {
     Q_UNUSED(vehicle);
-    uint32_t available = SetFlightModeCapability | PauseVehicleCapability | GuidedModeCapability;
+    uint32_t available = SetFlightModeCapability | PauseVehicleCapability | GuidedModeCapability | OrbitModeCapability | TakeoffVehicleCapability | ROIModeCapability;
     return (capabilities & available) == capabilities;
 }
 
