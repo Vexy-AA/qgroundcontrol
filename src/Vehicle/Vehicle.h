@@ -180,6 +180,7 @@ public:
     Q_PROPERTY(QString              formattedMessages           READ formattedMessages                                              NOTIFY formattedMessagesChanged)
     Q_PROPERTY(QString              latestError                 READ latestError                                                    NOTIFY latestErrorChanged)
     Q_PROPERTY(bool                 joystickEnabled             READ joystickEnabled            WRITE setJoystickEnabled            NOTIFY joystickEnabledChanged)
+    Q_PROPERTY(bool                 joystickForced             READ joystickForced            WRITE setJoystickForced            NOTIFY joystickForcedChanged)
     Q_PROPERTY(int                  flowImageIndex              READ flowImageIndex                                                 NOTIFY flowImageIndexChanged)
     Q_PROPERTY(int                  rcRSSI                      READ rcRSSI                                                         NOTIFY rcRSSIChanged)
     Q_PROPERTY(bool                 px4Firmware                 READ px4Firmware                                                    NOTIFY firmwareTypeChanged)
@@ -455,6 +456,8 @@ public:
 
     bool joystickEnabled            () const;
     void setJoystickEnabled         (bool enabled);
+    bool joystickForced            () const;
+    void setJoystickForced         (bool enabled);
     void sendJoystickDataThreadSafe (float roll, float pitch, float yaw, float thrust, quint16 buttons);
 
     // Property accesors
@@ -842,6 +845,7 @@ public slots:
 signals:
     void coordinateChanged              (QGeoCoordinate coordinate);
     void joystickEnabledChanged         (bool enabled);
+    void joystickForcedChanged         (bool enabled);
     void mavlinkMessageReceived         (const mavlink_message_t& message);
     void homePositionChanged            (const QGeoCoordinate& homePosition);
     void armedPositionChanged();
@@ -1054,6 +1058,7 @@ private:
     QFile               _csvLogFile;
 
     bool            _joystickEnabled = false;
+    bool            _joystickForced = false;
 
     UAS* _uas = nullptr;
 

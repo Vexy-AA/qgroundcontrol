@@ -2022,12 +2022,23 @@ bool Vehicle::joystickEnabled() const
     return _joystickEnabled;
 }
 
+bool Vehicle::joystickForced() const
+{
+    return _joystickForced;
+}
+
 void Vehicle::setJoystickEnabled(bool enabled)
 {
     _joystickEnabled = enabled;
     _startJoystick(_joystickEnabled);
     _saveSettings();
     emit joystickEnabledChanged(_joystickEnabled);
+}
+
+void Vehicle::setJoystickForced(bool enabled)
+{
+    _joystickForced = enabled;
+    emit joystickForcedChanged(_joystickForced);
 }
 
 void Vehicle::_startJoystick(bool start)
