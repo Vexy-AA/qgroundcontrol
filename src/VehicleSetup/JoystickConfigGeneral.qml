@@ -92,6 +92,35 @@ Item {
                 }
             }
             //---------------------------------------------------------------------
+            //-- Force Joystick
+            QGCLabel {
+                text:               qsTr("Force Joystick")
+                Layout.alignment:   Qt.AlignVCenter
+                Layout.minimumWidth: ScreenTools.defaultFontPixelWidth * 36
+            }
+            QGCCheckBox {
+                id:             gamepadSwitch
+                enabled:        _activeJoystick ? true : false
+                onClicked:      globals.activeVehicle.joystickForced = checked
+                Component.onCompleted: {
+                    checked = globals.activeVehicle.joystickForced
+                }
+                Connections {
+                    target: globals.activeVehicle
+                    onJoystickForcedChanged: {
+                        gamepadSwitch.checked = globals.activeVehicle.joystickForced
+                    }
+                }
+                Connections {
+                    target: joystickManager
+                    onActiveJoystickChanged: {
+                        if(_activeJoystick) {
+                            gamepadSwitch.checked = Qt.binding(function() { return globals.activeVehicle.joystickForced })
+                        }
+                    }
+                }
+            }
+            //---------------------------------------------------------------------
             //-- RC Mode
             QGCLabel {
                 text:               qsTr("RC Mode:")
