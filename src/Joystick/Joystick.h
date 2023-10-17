@@ -243,6 +243,7 @@ private:
     virtual bool _update    ()          = 0;
 
     virtual bool _getButton (int i)      = 0;
+    virtual bool _getButtonJoystick (int i)      = 0;
     virtual int  _getAxis   (int i)      = 0;
     virtual bool _getHat    (int hat,int i) = 0;
 

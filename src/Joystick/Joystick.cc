@@ -495,9 +495,10 @@ void Joystick::run()
 void Joystick::_handleButtons()
 {
     int lastBbuttonValues[256];
+    bool joystickForced = _activeVehicle->joystickForced();
     //-- Update button states
     for (int buttonIndex = 0; buttonIndex < _buttonCount; buttonIndex++) {
-        bool newButtonValue = _getButton(buttonIndex);
+        bool newButtonValue = joystickForced? _getButtonJoystick(buttonIndex) : _getButton(buttonIndex);
         if(buttonIndex < 256)
             lastBbuttonValues[buttonIndex] = _rgButtonValues[buttonIndex];
         if (newButtonValue && _rgButtonValues[buttonIndex] == BUTTON_UP) {
@@ -946,8 +947,8 @@ void Joystick::setCircleCorrection(bool circleCorrection)
 void Joystick::setAxisFrequency(float val)
 {
     //-- Arbitrary limits
-    val = qMin(_minAxisFrequencyHz, val);
-    val = qMax(_maxAxisFrequencyHz, val);
+    val = qMax(_minAxisFrequencyHz, val);
+    val = qMin(_maxAxisFrequencyHz, val);
     _axisFrequencyHz = val;
     _saveSettings();
     emit axisFrequencyHzChanged();
@@ -956,8 +957,8 @@ void Joystick::setAxisFrequency(float val)
 void Joystick::setButtonFrequency(float val)
 {
     //-- Arbitrary limits
-    val = qMin(_minButtonFrequencyHz, val);
-    val = qMax(_maxButtonFrequencyHz, val);
+    val = qMax(_minButtonFrequencyHz, val);
+    val = qMin(_maxButtonFrequencyHz, val);
     _buttonFrequencyHz = val;
     _saveSettings();
     emit buttonFrequencyHzChanged();

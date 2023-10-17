@@ -41,6 +41,7 @@ private:
     bool _update    () final;
 
     bool _getButton (int i) final;
+    bool _getButtonJoystick(int i) final;
     int  _getAxis   (int i) final;
     bool _getHat    (int hat,int i) final;
 

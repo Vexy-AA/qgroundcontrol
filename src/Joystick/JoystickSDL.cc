@@ -166,6 +166,10 @@ bool JoystickSDL::_getButton(int i) {
     }
 }
 
+bool JoystickSDL::_getButtonJoystick(int i) {
+    return SDL_JoystickGetButton(sdlJoystick, i) == 1;
+}
+
 int JoystickSDL::_getAxis(int i) {
     if (_isGameController) {
         return SDL_GameControllerGetAxis(sdlController, SDL_GameControllerAxis(i));
