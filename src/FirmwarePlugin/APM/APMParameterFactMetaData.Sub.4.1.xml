@@ -2392,6 +2392,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -2463,6 +2464,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN0_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -2480,6 +2487,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -2551,6 +2559,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -2570,6 +2584,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -2641,6 +2656,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN10_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -2658,6 +2679,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -2729,6 +2751,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -2748,6 +2776,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -2819,6 +2848,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN11_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -2836,6 +2871,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -2907,6 +2943,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -2926,6 +2968,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -2997,6 +3040,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN12_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -3014,6 +3063,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -3085,6 +3135,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -3104,6 +3160,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -3175,6 +3232,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN13_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -3192,6 +3255,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -3263,6 +3327,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -3282,6 +3352,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -3353,6 +3424,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN14_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -3370,6 +3447,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -3441,6 +3519,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -3460,6 +3544,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -3531,6 +3616,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN15_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -3548,6 +3639,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -3619,6 +3711,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -3638,6 +3736,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -3709,6 +3808,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN1_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -3726,6 +3831,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -3797,6 +3903,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -3816,6 +3928,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -3887,6 +4000,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN2_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -3904,6 +4023,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -3975,6 +4095,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -3994,6 +4120,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -4065,6 +4192,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN3_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -4082,6 +4215,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -4153,6 +4287,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -4172,6 +4312,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -4243,6 +4384,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN4_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -4260,6 +4407,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -4331,6 +4479,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -4350,6 +4504,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -4421,6 +4576,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN5_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -4438,6 +4599,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -4509,6 +4671,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -4528,6 +4696,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -4599,6 +4768,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN6_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -4616,6 +4791,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -4687,6 +4863,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -4706,6 +4888,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -4777,6 +4960,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN7_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -4794,6 +4983,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -4865,6 +5055,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -4884,6 +5080,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -4955,6 +5152,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN8_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -4972,6 +5175,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -5043,6 +5247,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
@@ -5062,6 +5272,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -5133,6 +5344,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 <param humanName="Function for button when the shift mode is toggled on" name="BTN9_SFUNCTION" documentation="Set to 0 to disable or choose a function" user="Standard">
@@ -5150,6 +5367,7 @@
 <value code="10">mode_circle</value>
 <value code="11">mode_guided</value>
 <value code="12">mode_acro</value>
+<value code="13">mode_surface</value>
 <value code="21">mount_center</value>
 <value code="22">mount_tilt_up</value>
 <value code="23">mount_tilt_down</value>
@@ -5221,6 +5439,12 @@
 <value code="105">relay_2_momentary</value>
 <value code="106">relay_3_momentary</value>
 <value code="107">relay_4_momentary</value>
+<value code="108">k_script_1</value>
+<value code="109">k_script_2</value>
+<value code="110">k_script_3</value>
+<value code="111">k_script_4</value>
+<value code="112">k_float_inc</value>
+<value code="113">k_float_dec</value>
 </values>
 </param>
 </parameters>
